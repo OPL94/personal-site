@@ -1,5 +1,7 @@
 runtime: python39
 
+service: personal-site
+
 handlers:
   - url: /static
     script: static_dir

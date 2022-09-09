@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: blue;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+    background-color: #111;
+    }
+</style>
+
+<ul>
+    <li><a href="{{ url_for('index')}}">Home</a></li>
+    <li><a href="{{ url_for('about')}}">About Me</a></li>
+    <li><a href="{{ url_for('services')}}">Services</a></li>
+    <li><a href="{{ url_for('contact')}}">Contact</a></li>
+</ul>

@@ -1,5 +1,5 @@
 """
-This module is designed to initialise the Flask application
+This module is designed to initialise the Flask web application. 
 """
 
 from flask import Flask, render_template

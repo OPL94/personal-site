@@ -6,19 +6,20 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+
+@app.route("/", method=["GET"])
 def index():
     return render_template("index.html")
 
-@app.route("/about")
+@app.route("/about", method=["GET"])
 def about():
     return render_template("about.html")
 
-@app.route("/services")
+@app.route("/services", method=["GET"])
 def services():
     return render_template("services.html")
 
-@app.route("/contact")
+@app.route("/contact", method=["GET"])
 def contact():
     return render_template("contact.html")
 

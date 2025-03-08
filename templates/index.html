@@ -4,16 +4,20 @@
     <title>Omar Palmer-Lopez</title>
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styler.css') }}">    
+    {% include "header.html" %}
 </head>
 
-<body>
-    <ul>
-        <li><a href="{{ url_for('index')}}">Home</a></li>
-        <li><a href="{{ url_for('about')}}">About Me</a></li>
-        <li><a href="{{ url_for('services')}}">Services</a></li>
-        <li><a href="{{ url_for('contact')}}">Contact</a></li>
-    </ul>
+<body class="text-white">
+    {% include "navbar.html" %}
+    <div class="d-flex h-100 text-center text-white bg-dark">
+    <main class="px-3">
+        <h1>Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+        </p>
+    </main>
+    </div>
     
 </body>
 </html>

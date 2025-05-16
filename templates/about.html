@@ -3,11 +3,12 @@
 <head>
     <title>About | Omar Palmer-Lopez</title>
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styler.css') }}">
+    
+    {% include "header.html" %}
 </head>
 
 <body>
-    {% include 'header.html' %}
+    {% include "navbar.html" %}
     <h1>About!</h1>
 </body>
 </html>
